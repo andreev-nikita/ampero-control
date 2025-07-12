@@ -6,4 +6,6 @@ class ArmButton(Button):
         self._add_listener(self._on_button_press)
 
     def _on_button_press(self):
-        self._song.view.selected_track.arm = not self._song.view.selected_track.arm
+        selected_track = self._song.view.selected_track
+        if (selected_track.can_be_armed):
+            selected_track.arm = not selected_track.arm
