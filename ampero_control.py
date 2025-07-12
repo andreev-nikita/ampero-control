@@ -5,7 +5,7 @@ from .navigation_button import NavigationButton
 from .arm_button import ArmButton
 from .fire_button import FireButton
 
-BUTTONS_CONFIG = [
+TRACK_FIRE_BUTTONS_CONFIG = [
     { 'cc_note': 20, 'track': 0 },
     { 'cc_note': 21, 'track': 1 },
     { 'cc_note': 22, 'track': 2 },
@@ -24,4 +24,4 @@ class AmperoControl(ControlSurface):
         self._navigate_right_button = NavigationButton(self, 17, 'right')
         self._arm_button = ArmButton(self, 18)
         self._fire_button = FireButton(self, 19)
-        self._track_fire_buttons = [TrackFireButton(self, button_config['cc_note'], button_config['track']) for button_config in BUTTONS_CONFIG] 
+        self._track_fire_buttons = [TrackFireButton(self, config['cc_note'], config['track']) for config in TRACK_FIRE_BUTTONS_CONFIG] 
