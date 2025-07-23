@@ -7,6 +7,9 @@ class FireButton(Button):
 
     def _on_button_press(self):
         current_scene_index = list(self._song.scenes).index(self._song.view.selected_scene)
-        target_clip_slot = self._song.view.selected_track.clip_slots[current_scene_index]
-        if (target_clip_slot):
-            target_clip_slot.fire()
+        clip_slots = self._song.view.selected_track.clip_slots
+
+        if (current_scene_index < len(clip_slots)):
+            target_clip_slot = clip_slots[current_scene_index]
+            if (target_clip_slot):
+            	target_clip_slot.fire()

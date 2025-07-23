@@ -20,8 +20,10 @@ class AmperoControl(ControlSurface):
     def __init__(self, c_instance):
         super().__init__(c_instance=c_instance)
         self.show_message("'AmperoControl' Control Surface has been loaded.")
-        self._navigate_left_button = NavigationButton(self, 16, 'left')
-        self._navigate_right_button = NavigationButton(self, 17, 'right')
-        self._arm_button = ArmButton(self, 18)
-        self._fire_button = FireButton(self, 19)
         self._track_fire_buttons = [TrackFireButton(self, config['cc_note'], config['track']) for config in TRACK_FIRE_BUTTONS_CONFIG] 
+        self._navigate_left_button = NavigationButton(self, 28, 'left')
+        self._navigate_right_button = NavigationButton(self, 29, 'right')
+        self._navigate_up_button = NavigationButton(self, 30, 'up')
+        self._navigate_down_button = NavigationButton(self, 31, 'down')
+        self._arm_button = ArmButton(self, 85)
+        self._fire_button = FireButton(self, 86)
