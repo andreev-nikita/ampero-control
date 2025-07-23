@@ -34,12 +34,16 @@ class TrackFireButton(Button):
 
     @property
     def _target_track(self):
-        return self._song.tracks[self._track_index]
+        if (self._track_index < len(self._song.tracks)):
+            return self._song.tracks[self._track_index]
 
     @property
     def _target_clip_slot(self):
-        current_scene_index = list(self._song.scenes).index(self._song.view.selected_scene)
-        return self._target_track.clip_slots[current_scene_index]
+        if (self._target_track):
+            current_scene_index = list(self._song.scenes).index(self._song.view.selected_scene)
+            clip_slots = self._target_track.clip_slots
+            if (current_scene_index < len(clip_slots)):
+                return clip_slots[current_scene_index]
 
     @property
     def _is_any_clip_recording(self):
