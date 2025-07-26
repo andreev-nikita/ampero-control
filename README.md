@@ -15,7 +15,7 @@ Thank you for your support!
 
 1. Click the green "Code" button.
 2. Select "Download ZIP".
-3. Unzip the download file.
+3. Unzip the downloaded file.
 4. Rename the root folder to "Ampero Control"
 5. Follow this [guide](https://help.ableton.com/hc/en-us/articles/209072009-Installing-third-party-remote-scripts) to install the script.
 6. Connect your device to the copmuter.
@@ -47,4 +47,4 @@ Now you can use your Ampero Control with Ableton Live.
 | 29 | Clips navigation: usefull for the Session View. navigate right |
 | 30 | Clips navigation: usefull for the Session View. navigate up |
 | 31 | Clips navigation: usefull for the Session View. navigate down |
-| 20 - 27 | Live Looping buttons for the Session View. Each button is assigned to a different track(20 - first track, 21 - second track, etc.). When you press a butonn, the following actions occur. All currently armed for recording tracks become disarmed. The track assigned to the pressed button becomes armed for recording. Recording of the newly armed track begins. If your press the same button again (or another track button), the recording of the current clip stops.|
+| 20 - 27 | Live Looping buttons for the Session View. Each button is assigned to a different track(20 - first track, 21 - second track, etc.). When you press a button, the following actions occur. All currently armed for recording tracks become disarmed. The track assigned to the pressed button becomes armed for recording. Recording of the newly armed track begins. If your press the same button again (or another track button), the recording of the current clip stops.|
